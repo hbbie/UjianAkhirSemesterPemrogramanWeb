@@ -1,0 +1,107 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+    :root {
+        --primary-gold: #c5a059;
+        --dark-bg: #0f0f0f;
+        --card-bg: #1a1a1a;
+        --text-gray: #a0a0a0;
+    }
+
+    body { 
+        background-color: var(--dark-bg); 
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Navbar Luxury */
+    .navbar {
+        background: rgba(0, 0, 0, 0.8) !important;
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+    }
+
+    .navbar-brand {
+        font-family: 'Playfair Display', serif;
+        color: var(--primary-gold) !important;
+        font-size: 1.8rem;
+    }
+
+    /* Luxury Card */
+    .car-card {
+        background: var(--card-bg);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 0; /* Tajam lebih berkesan mewah */
+        transition: 0.4s;
+        position: relative;
+    }
+
+    .car-card:hover {
+        border-color: var(--primary-gold);
+        transform: translateY(-5px);
+    }
+
+    .price-badge {
+        background: var(--primary-gold);
+        color: #000;
+        font-weight: bold;
+        padding: 5px 20px;
+        position: absolute;
+        top: 200px;
+        right: 0;
+        z-index: 10;
+    }
+
+    .car-img {
+        filter: grayscale(30%);
+        transition: 0.5s;
+    }
+
+    .car-card:hover .car-img {
+        filter: grayscale(0%);
+    }
+
+    /* Button Gold */
+    .btn-primary {
+        background: var(--primary-gold);
+        border: none;
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-radius: 0;
+    }
+
+    .btn-primary:hover {
+        background: #e2b96d;
+        color: #000;
+    }
+
+    /* Search Box Luxury */
+    .form-control {
+        background: #222;
+        border: 1px solid #333;
+        color: white;
+        border-radius: 0;
+    }
+
+    .form-control:focus {
+        background: #282828;
+        border-color: var(--primary-gold);
+        color: white;
+        box-shadow: none;
+    }
+
+    /* Pagination Luxury */
+    .page-link {
+        background: #1a1a1a;
+        border: 1px solid #333;
+        color: var(--primary-gold);
+    }
+
+    .page-item.active .page-link {
+        background: var(--primary-gold);
+        border-color: var(--primary-gold);
+        color: #000;
+    }
+</style>
